@@ -11,6 +11,7 @@ run pip3 install django
 workdir /home/docker/code/
 add django_helloworld /home/docker/code/
 
+expose 8000
+
 cmd python3 manage.py runserver 0.0.0.0:8000
 
-expose 8000
